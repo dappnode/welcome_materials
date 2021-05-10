@@ -26,7 +26,7 @@ export default function Wifi() {
   const steps: ActionStep[] = [
     {
       title: "Connect to its Wi-Fi",
-      image: { name: "/wifi-icon.png", width: 100, height: 100 },
+      image: "/wifi.png",
       component: WifiCredentials,
     },
   ];

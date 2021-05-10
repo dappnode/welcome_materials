@@ -1,12 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Navbar() {
   return (
     <nav>
       <div className="navbar-logo">
-        <Image src={"/dappnode.png"} width={75} height={75} />
+        <img src={"/dappnode-logo.png"} />
       </div>
       <div className="navbar-title-links">
         <div className="navbar-title">

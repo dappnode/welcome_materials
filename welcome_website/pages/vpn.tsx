@@ -44,8 +44,8 @@ function WireguardClient() {
 function VpnClients() {
   return (
     <>
-      <h1>Choose your VPN client</h1>
-      <div>
+      <h1>*Choose your VPN client</h1>
+      <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: 30 }}>
         <WireguardClient />
         <OpenVpnClient />
       </div>
@@ -56,17 +56,20 @@ function VpnClients() {
 export default function Vpn() {
   const steps: ActionStep[] = [
     {
+      title: "*Choose your VPN client",
+      image: "/select.png",
+    },
+    {
       title: "Get your VPN credentials",
-      image: { name: "/credentials-icon.png", width: 100, height: 100 },
+      image: "/vpn-credentials.png",
     },
   ];
   return (
     <div className="connect-content">
+      <h1>VPN</h1>
       <p>Connect to your DAppNode through VPN from anywhere.</p>
-
-      <VpnClients />
-
       <StepperConnection steps={steps} />
+      <VpnClients />
     </div>
   );
 }

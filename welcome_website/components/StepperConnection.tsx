@@ -3,7 +3,6 @@ import React from "react";
 import { Step, StepLabel, Stepper, ThemeProvider } from "@material-ui/core";
 import theme from "../styles/materialUi";
 // Next js
-import Image from "next/image";
 import { ActionStep } from "../utils/types";
 import { firstStep, lastStep } from "./CommonSteps";
 
@@ -17,23 +16,18 @@ export default function StepperConnection({
   steps = [firstStep, ...steps, lastStep({ avahi })];
   return (
     <ThemeProvider theme={theme}>
-      <Stepper
-        style={{ backgroundColor: "#eee", marginTop: 20, color: "#393e46" }}
-        activeStep={-1}
-        orientation="horizontal"
-        alternativeLabel={true}
-      >
+      <Stepper activeStep={-1} orientation="horizontal" alternativeLabel={true}>
         {steps.map((step, i) => (
           <Step key={i}>
-            <StepLabel style={{ marginBottom: 15 }}>{step.title}</StepLabel>
+            <StepLabel>{step.title}</StepLabel>
 
             {step.component ? (
               <>
-                <Image src={step.image.name} width={step.image.width} height={step.image.height} />
+                <img src={step.image} />
                 <step.component />
               </>
             ) : (
-              <Image src={step.image.name} width={step.image.width} height={step.image.height} />
+              <img src={step.image} />
             )}
           </Step>
         ))}

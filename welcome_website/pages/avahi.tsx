@@ -8,7 +8,7 @@ export default function Avahi() {
   const steps: ActionStep[] = [
     {
       title: "Connect your device to the same network",
-      image: { name: "/avahi-connect.png", width: 300, height: 150 },
+      image: "/avahi-connect.png",
     },
   ];
   return (

@@ -1,9 +1,5 @@
 export interface ActionStep {
   title: string;
-  image: {
-    name: string;
-    width: number;
-    height: number;
-  };
+  image: string;
   component?: () => JSX.Element;
 }

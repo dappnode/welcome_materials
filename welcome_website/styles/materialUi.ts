@@ -2,11 +2,12 @@ import { createMuiTheme } from "@material-ui/core";
 
 const theme = createMuiTheme({
   overrides: {
+    MuiStepper: { root: { backgroundColor: "#eee", marginTop: 20, color: "#393e46" } },
     MuiStep: {
       horizontal: {
         justifyContent: "space-around",
-        paddingLeft: 80,
-        paddingRight: 80,
+        paddingLeft: 16,
+        paddingRight: 16,
       },
     },
     MuiStepConnector: {
@@ -25,6 +26,7 @@ const theme = createMuiTheme({
     },
     MuiStepLabel: {
       label: {
+        marginBottom: 10,
         color: "#393e46",
       },
     },
