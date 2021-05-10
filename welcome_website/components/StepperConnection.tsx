@@ -5,7 +5,7 @@ import theme from "../utils/materialUi";
 // Own
 import { ActionStep } from "../utils/types";
 import { firstStep, lastStep } from "./CommonSteps";
-import params from "../utils/params";
+import { params } from "../utils/params";
 
 export default function StepperConnection({
   steps,
