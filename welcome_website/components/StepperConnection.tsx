@@ -1,7 +1,7 @@
 import React from "react";
 // Material UI
 import { Step, StepLabel, Stepper, ThemeProvider } from "@material-ui/core";
-import theme from "../styles/materialUi";
+import theme from "../utils/materialUi";
 // Next js
 import { ActionStep } from "../utils/types";
 import { firstStep, lastStep } from "./CommonSteps";

@@ -2,7 +2,7 @@ import React from "react";
 // Next js
 import Link from "next/link";
 // Material UI
-import theme from "../styles/materialUi";
+import theme from "../utils/materialUi";
 import { Card, CardContent, ThemeProvider, CardHeader, Grid } from "@material-ui/core";
 
 export default function Home() {

@@ -1,4 +1,4 @@
 module.exports = {
-  basePath: "/welcome_materials/welcome_website",
-  assetPrefix: "/welcome_materials/welcome_website/",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
 };

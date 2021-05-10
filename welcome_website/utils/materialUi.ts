@@ -44,9 +44,6 @@ const theme = createMuiTheme({
         cursor: "pointer",
       },
     },
-    MuiCardHeader: {
-      root: {},
-    },
   },
 });
 
