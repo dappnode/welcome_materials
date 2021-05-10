@@ -12,4 +12,6 @@ export const params = {
   // Wi-Fi
   SSID: "DAppNodeWifi",
   PASSWORD: "dappnode",
+  // Path static images
+  basePath: "/welcome_materials",
 };

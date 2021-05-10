@@ -2,9 +2,10 @@ import React from "react";
 // Material UI
 import { Step, StepLabel, Stepper, ThemeProvider } from "@material-ui/core";
 import theme from "../utils/materialUi";
-// Next js
+// Own
 import { ActionStep } from "../utils/types";
 import { firstStep, lastStep } from "./CommonSteps";
+import params from "../utils/params";
 
 export default function StepperConnection({
   steps,
@@ -23,11 +24,11 @@ export default function StepperConnection({
 
             {step.component ? (
               <>
-                <img src={step.image} />
+                <img src={params.basePath + step.image} />
                 <step.component />
               </>
             ) : (
-              <img src={step.image} />
+              <img src={params.basePath + step.image} />
             )}
           </Step>
         ))}
