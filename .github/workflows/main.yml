@@ -13,13 +13,13 @@ jobs:
           npm install
           npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /welcome_materials/welcome_website
+          NEXT_PUBLIC_BASE_PATH: /welcome_materials
 
       - name: Export
         working-directory: ./welcome_website
         run: npm run export
         env:
-          NEXT_PUBLIC_BASE_PATH: /welcome_materials/welcome_website
+          NEXT_PUBLIC_BASE_PATH: /welcome_materials
 
       - name: Prevent underscore
         working-directory: ./welcome_website
