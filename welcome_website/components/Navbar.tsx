@@ -20,8 +20,8 @@ export default function Navbar() {
           <Link href="/wifi">
             <a>Wi-Fi</a>
           </Link>
-          <Link href="/avahi">
-            <a>Avahi</a>
+          <Link href="/lnd">
+            <a>Lnd</a>
           </Link>
           <Link href="/vpn">
             <a>Vpn</a>

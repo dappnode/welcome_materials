@@ -1,6 +1,6 @@
-import { ActionStep } from "../utils/types";
 import Link from "next/link";
 import { params } from "../utils/params";
+import { ActionStep } from "../utils/types";
 
 export const firstStep: ActionStep = {
   title: "Plug DAppNode to the router",

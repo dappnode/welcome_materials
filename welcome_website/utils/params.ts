@@ -13,5 +13,5 @@ export const params = {
   SSID: "DAppNodeWifi",
   PASSWORD: "dappnode",
   // Path static images
-  basePath: "/welcome_materials",
+  basePath: process.env.NODE_ENV === "production" ? "/welcome_materials" : "",
 };

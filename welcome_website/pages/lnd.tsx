@@ -13,10 +13,9 @@ export default function Avahi() {
   ];
   return (
     <div className="connect-content">
-      <h1>Avahi</h1>
+      <h1>Local Network Discovery</h1>
       <p>
-        Connect directly to your dappnode been in the same network by entering:
-        http://my.dappnode.local
+        Connect directly to your dappnode been in the same local network: http://my.dappnode.local
       </p>
       <StepperConnection steps={steps} avahi={true} />
     </div>

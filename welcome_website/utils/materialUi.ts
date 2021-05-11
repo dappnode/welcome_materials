@@ -32,7 +32,9 @@ const theme = createMuiTheme({
     },
     MuiCard: {
       root: {
-        flexGrow: 1,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
         height: 400,
         width: 270,
         backgroundColor: "#393e46",
@@ -42,6 +44,11 @@ const theme = createMuiTheme({
           boxShadow: "0 16px 70px -12.125px #2fbcb2",
         },
         cursor: "pointer",
+      },
+    },
+    MuiTypography: {
+      h5: {
+        fontSize: 40,
       },
     },
   },
