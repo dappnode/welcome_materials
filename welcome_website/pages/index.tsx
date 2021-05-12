@@ -8,8 +8,8 @@ import { Card, CardContent, ThemeProvider, CardHeader, Grid } from "@material-ui
 export default function Home() {
   const connectionMethods = [
     { title: "Wi-Fi", description: "START HERE", tutorialPath: "/wifi" },
-    { title: "LND", description: "Local Network Discovery", tutorialPath: "/avahi" },
-    { title: "VPN", description: "Connect from anywhere", tutorialPath: "/vpn" },
+    { title: "Local", description: "", tutorialPath: "/local" },
+    { title: "VPN", description: "", tutorialPath: "/vpn" },
   ];
   return (
     <ThemeProvider theme={theme}>

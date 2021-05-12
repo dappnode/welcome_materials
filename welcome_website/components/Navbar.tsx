@@ -10,8 +10,9 @@ export default function Navbar() {
       </div>
       <div className="navbar-title-links">
         <div className="navbar-title">
-          <h1>Connect to </h1>
-          <h1 className="navbar-title-dappnode">DAppNode</h1>
+          <h1>
+            Connect to<span className="navbar-title-dappnode">DAppNode</span>
+          </h1>
         </div>
         <div className="navbar-links">
           <Link href="/">
@@ -20,8 +21,8 @@ export default function Navbar() {
           <Link href="/wifi">
             <a>Wi-Fi</a>
           </Link>
-          <Link href="/lnd">
-            <a>Lnd</a>
+          <Link href="/local">
+            <a>Local</a>
           </Link>
           <Link href="/vpn">
             <a>Vpn</a>

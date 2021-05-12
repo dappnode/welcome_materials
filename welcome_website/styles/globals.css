@@ -57,7 +57,7 @@ main {
 
 .navbar-logo {
   position: absolute;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 20px;
 }
 
@@ -84,15 +84,15 @@ main .connect-content {
   align-items: center;
 }
 
-.footer a {
+/*Links*/
+a {
   margin-left: 30px;
   color: #2fbcb2;
   font-size: 18px;
   font-weight: 800;
   text-decoration: none;
 }
-
-.footer a:hover {
+a:hover {
   text-decoration: underline;
 }
 
