@@ -5,7 +5,8 @@ export const params = {
   OPENVPN_DAPPNODE_URL: "http://my.dappnode/#/installer/vpn.dnp.dappnode.eth",
   // 2. Wireguard
   WIREGUARD_DOWNLOAD_URL: "https://www.wireguard.com/install/",
-  WIREGUARD_DAPPNODE_URL: "http://my.dappnode/#/installer/wireguard.dnp.dappnode.eth",
+  WIREGUARD_DAPPNODE_URL:
+    "http://my.dappnode/#/installer/wireguard.dnp.dappnode.eth",
   // Endpoints
   DAPPNODE_ENDPOINT: "http://my.dappnode",
   DAPPNODE_AVAHI_ENDPOINT: "http://my.dappnode.local",
@@ -14,4 +15,5 @@ export const params = {
   PASSWORD: "dappnode",
   // Path static images
   basePath: process.env.NODE_ENV === "production" ? "/welcome_materials" : "",
+  DISCORD_SERVER_URL: "https://discord.com/invite/dappnode",
 };
