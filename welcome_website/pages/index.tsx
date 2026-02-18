@@ -1,8 +1,8 @@
 import React from "react";
 // Next js
 import Link from "next/link";
-// Material UI
-import theme from "../utils/materialUi";
+// Shadcn UI
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   const connectionMethods = [
@@ -11,21 +11,21 @@ export default function Home() {
     { title: "VPN", description: "", tutorialPath: "/vpn" },
   ];
   return (
-    // <ThemeProvider theme={theme}>
-    //   <Grid container justify="center" spacing={4}>
-    //     {connectionMethods.map((method, i) => (
-    //       <Grid key={i} item>
-    //         <Link href={method.tutorialPath}>
-    //           <Card>
-    //             <CardHeader title={method.title}></CardHeader>
-    //             <CardContent children={method.description}></CardContent>
-    //           </Card>
-    //         </Link>
-    //       </Grid>
-    //     ))}
-    //   </Grid>
-    // </ThemeProvider>
-
-    <div>Welcome</div>
+    <div className="container mx-auto py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {connectionMethods.map((method, i) => (
+          <Link key={i} href={method.tutorialPath}>
+            <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+              <CardHeader>
+                <CardTitle className="text-center">{method.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-muted-foreground">{method.description}</p>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }
