@@ -1,5 +1,4 @@
 import React from "react";
-import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ActionStep } from "../utils/types";
 import { firstStep, lastStep } from "./CommonSteps";
@@ -17,7 +16,7 @@ export default function ConnectionStepper({
   const allSteps = [firstStep, ...steps, lastStep({ avahi })];
 
   return (
-    <div className="w-full py-8">
+    <div className="w-full pt-8">
       <div className="flex flex-col md:flex-row justify-between items-start gap-8">
         {allSteps.map((step, index) => (
           <div key={index} className="flex-1 w-full">

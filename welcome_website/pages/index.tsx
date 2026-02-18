@@ -27,7 +27,7 @@ const connectionMethods: Record<
     tutorialPath: "/vpn",
   },
   Local: {
-    description: "Direct connection using local IP address (fallback method)",
+    description: "Direct connection using local IP address",
     tutorialPath: "/local",
     warning: "Fallback method",
   },
