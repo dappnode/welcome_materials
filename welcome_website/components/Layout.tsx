@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function Layout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="w-full">
+      <header className="h-28 w-full">
         <Navbar />
       </header>
       <main className="flex-1 w-full">{children}</main>
