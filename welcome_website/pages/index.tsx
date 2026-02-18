@@ -8,13 +8,14 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
+import { AlertTriangle } from "lucide-react";
 import { params } from "@/utils/params";
 
 type ConnectionType = "Wi-Fi" | "Local" | "VPN";
 
 const connectionMethods: Record<
   ConnectionType,
-  { description: string; tutorialPath: string }
+  { description: string; tutorialPath: string; warning?: string }
 > = {
   "Wi-Fi": {
     description:
@@ -28,6 +29,7 @@ const connectionMethods: Record<
   Local: {
     description: "Direct connection using local IP address (fallback method)",
     tutorialPath: "/local",
+    warning: "Fallback method",
   },
 };
 
@@ -95,9 +97,15 @@ export default function Home() {
             <Link key={key} href={method.tutorialPath}>
               <Card variant="clickable" className="h-full">
                 <CardHeader>
-                  <CardTitle className="text-center text-xl mb-3">
-                    {key}
-                  </CardTitle>
+                  <div className="flex items-center justify-center gap-2 mb-3">
+                    <CardTitle className="text-center text-xl">{key}</CardTitle>
+                    {method.warning && (
+                      <div className="inline-flex items-center gap-1.5 rounded-md bg-(--warning-bg) px-2 py-1 text-xs font-medium text-(--warning)">
+                        <AlertTriangle className="h-3 w-3" />
+                        {method.warning}
+                      </div>
+                    )}
+                  </div>
                   <CardDescription className="text-center">
                     {method.description}
                   </CardDescription>

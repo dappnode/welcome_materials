@@ -54,6 +54,12 @@
   --dappnode-light: #eee;
   --dappnode-blue: #082c41;
 
+  /* Warning/Alert Colors */
+  --warning: #f59e0b;
+  --warning-foreground: #78350f;
+  --warning-bg: #fef3c7;
+  --warning-border: #fbbf24;
+
   /* Shadcn Theme Colors */
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
@@ -120,6 +126,12 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* Warning/Alert Colors - Dark Mode */
+  --warning: #fbbf24;
+  --warning-foreground: #fef3c7;
+  --warning-bg: rgba(120, 53, 15, 0.2);
+  --warning-border: rgba(251, 191, 36, 0.5);
 }
 
 @layer base {
