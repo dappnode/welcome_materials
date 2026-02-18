@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 // Material UI
 import theme from "../utils/materialUi";
-import { Card, CardContent, ThemeProvider, CardHeader, Grid } from "@material-ui/core";
 
 export default function Home() {
   const connectionMethods = [
@@ -12,19 +11,21 @@ export default function Home() {
     { title: "VPN", description: "", tutorialPath: "/vpn" },
   ];
   return (
-    <ThemeProvider theme={theme}>
-      <Grid container justify="center" spacing={4}>
-        {connectionMethods.map((method, i) => (
-          <Grid key={i} item>
-            <Link href={method.tutorialPath}>
-              <Card>
-                <CardHeader title={method.title}></CardHeader>
-                <CardContent children={method.description}></CardContent>
-              </Card>
-            </Link>
-          </Grid>
-        ))}
-      </Grid>
-    </ThemeProvider>
+    // <ThemeProvider theme={theme}>
+    //   <Grid container justify="center" spacing={4}>
+    //     {connectionMethods.map((method, i) => (
+    //       <Grid key={i} item>
+    //         <Link href={method.tutorialPath}>
+    //           <Card>
+    //             <CardHeader title={method.title}></CardHeader>
+    //             <CardContent children={method.description}></CardContent>
+    //           </Card>
+    //         </Link>
+    //       </Grid>
+    //     ))}
+    //   </Grid>
+    // </ThemeProvider>
+
+    <div>Welcome</div>
   );
 }

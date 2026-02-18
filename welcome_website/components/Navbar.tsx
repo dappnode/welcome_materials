@@ -15,18 +15,10 @@ export default function Navbar() {
           </h1>
         </div>
         <div className="navbar-links">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/wifi">
-            <a>Wi-Fi</a>
-          </Link>
-          <Link href="/local">
-            <a>Local</a>
-          </Link>
-          <Link href="/vpn">
-            <a>Vpn</a>
-          </Link>
+          <Link href="/">Home</Link>
+          <Link href="/wifi">Wi-Fi</Link>
+          <Link href="/local">Local</Link>
+          <Link href="/vpn">Vpn</Link>
         </div>
       </div>
     </nav>
