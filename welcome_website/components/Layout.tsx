@@ -4,12 +4,12 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="wrapper">
-      <header className="header">
+    <div className="min-h-screen flex flex-col">
+      <header className="h-28 w-full">
         <Navbar />
       </header>
-      <main className="content">{children}</main>
-      <footer className="footer">
+      <main className="flex-1 w-full">{children}</main>
+      <footer className="h-22 w-full">
         <Footer />
       </footer>
     </div>
