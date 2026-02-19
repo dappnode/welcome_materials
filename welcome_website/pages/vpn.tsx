@@ -31,6 +31,12 @@ const clientOptions: {
   Icon: React.ComponentType<{ className?: string }>;
 }[] = [
   {
+    name: "Tailscale",
+    url: params.TAILSCALE_DOWNLOAD_URL,
+    dappnodeUrl: params.TAILSCALE_DAPPNODE_URL,
+    Icon: TailscaleIcon,
+  },
+  {
     name: "OpenVPN",
     url: params.OPENVPN_DOWNLOAD_URL,
     dappnodeUrl: params.OPENVPN_DAPPNODE_URL,
@@ -41,12 +47,6 @@ const clientOptions: {
     url: params.WIREGUARD_DOWNLOAD_URL,
     dappnodeUrl: params.WIREGUARD_DAPPNODE_URL,
     Icon: SiWireguard,
-  },
-  {
-    name: "Tailscale",
-    url: params.TAILSCALE_DOWNLOAD_URL,
-    dappnodeUrl: params.TAILSCALE_DAPPNODE_URL,
-    Icon: TailscaleIcon,
   },
 ];
 
